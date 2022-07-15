@@ -1,0 +1,67 @@
+body{
+    background:rgb(2,0,36) ;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(111,110,107,0.908000700280112) 100%, rgba(0,212,255,1) 100%);;
+}
+
+h1{
+
+    font-family: 'Titan One', cursive;
+
+}
+.navegador{
+    position: fixed;
+    z-index: 1;
+   margin: 0;
+}
+
+.titulopri{
+    padding-top: 60px;
+}
+.titulo1{
+    position: relative;
+}
+.titulo{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.carta{
+    justify-content: space-evenly;
+}
+
+footer{
+    background-color: black;
+}
+.imagenwsp{
+    width: 55px;
+    height: 55pxpx;
+}
+.btn-wsp{
+    position: fixed;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: rgb(94, 231, 94);
+}
+.btn-inst{
+    position: fixed;
+    line-height: 55px;
+    bottom: 95px;
+    right: 30px;
+    
+}
+.btn-face{
+    position: fixed;
+    line-height: 55px;
+    bottom: 160px;
+    right: 30px;
+    background: rgb(73, 73, 168);
+}
+.carrusel{
+    height: 300px;
+}
+/* .circulo{
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: antiquewhite;
+} */
