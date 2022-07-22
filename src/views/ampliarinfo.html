@@ -18,15 +18,17 @@
     href="https://fonts.googleapis.com/css2?family=Fascinate&family=Playfair+Display:ital,wght@0,400;1,500;1,600&family=Titan+One&family=Ubuntu:wght@300;400&display=swap"
     rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="../../assets/css/style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
     <title>tienda</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navegador w-100">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 navegador">
 
 
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="../../index.html"><img src="../../assets/img/WhatsApp Image 2022-07-07 at 2.30.32 PM.jpeg" class="imagen-logo" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -44,7 +46,7 @@
                   <a class="nav-link" href="#">arrendamientos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="" >ventas</a>
+                  <a class="nav-link active" href="../views/casas.html" >casas</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">consigna tu propiedad</a>
@@ -62,24 +64,36 @@
                   </div>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
+
+
+
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="#"><i class="bi bi-cart4"></i><span class="sr-only">(current)</span></a>
+                </li>
+                <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger">
+                  99+
+                  
+                </span>
+              </ul>
+              
+
             </div>
 
     </header>
 
-    <main>
+    <main class="titulopri">
         <section>
             <div class="container ">
                 <div class="row">
-                    <div class="col-12 row-cols-md-5">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/juantiendatcc.appspot.com/o/libro1.jpg?alt=media&token=6acf4693-4bdc-4bce-9e5b-211702172eff" alt="">
+                    <div class="col-12 row-cols-md-6">
+                        <img src="" id="foto" alt="">
                     </div>
-                    <div class="col-12 row-cols-md-5">
-                        <h3 class="">medellin</h3>
-                        <h2 class="fw-bold ">650000</h2>
+                    <div class="col-12 row-cols-md-6 border-start">
+                        <h3 class="text-light" id="ubicacion"></h3>
+                        <h2 class="text-light" id="barrio"></h2>
+                        <h2 class="fw-bold text-light" id="precio"></h2>
+                        <p class="text-light" id="descripcion"></p>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -100,10 +114,10 @@
                         <p>tienes 30  dias desde que lo recibes</p>
                         <div>
                           <label class="form-label">cantidad </label>
-                          <input type="number" placeholder="1" id="cantidad">
+                          <input type="number" placeholder="1" id="cantidad" value="1">
                         </div>
 
-                        <button type="button" class="btn btn-primary">añadir al carrito</button>
+                        <button type="button" id="agregar" class="btn btn-primary">añadir al carrito</button>
 
                     </div>
                 </div>
@@ -117,7 +131,7 @@
     
 
 
-    <script src="../cotrollers/controladorcompra.js"></script>
+    <script src="../cotrollers/controladorcompra.js" type="module"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

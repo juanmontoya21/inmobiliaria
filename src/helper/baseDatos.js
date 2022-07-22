@@ -1,3 +1,5 @@
+//agregar popularidad =1 hasta 5
+
 export let productosBD=[
     {
         ubicaion:"medellin",
